@@ -21,7 +21,7 @@
         <el-table-column prop="routeUri" align="center" :show-overflow-tooltip="true" label="路由转发地址"></el-table-column>
         <el-table-column prop="routeOrder" align="center" :show-overflow-tooltip="true" label="路由顺序">
         </el-table-column>
-        <el-table-column prop="predicates" align="center" :show-overflow-tooltip="true" width="300px" label="断言">
+        <el-table-column prop="predicates" align="center" :show-overflow-tooltip="true" label="断言">
           <template slot-scope="scope">
             <span>{{ scope.row.predicates}}</span>
           </template>
@@ -42,11 +42,13 @@
         </el-table-column>
         <el-table-column label="操作" align="center" fixed="right">
           <template slot-scope="scope">
+          <el-button-group>
             <el-button size="mini" type="warning" @click="handleUpdate(scope.row)">修改
             </el-button>
             <el-button size="mini" type="danger" @click="handleUpdateStatus(scope.row)">{{ scope.row.status === 1 ?
                 '启用' : '禁用' }}
             </el-button>
+            </el-button-group>
           </template>
         </el-table-column>
       </el-table>
@@ -213,5 +215,11 @@ export default {
 </script>
 
 <style lang="scss">
+body .el-table th.gutter {
+  display: table-cell !important;
+}
 
+body .el-table colgroup.gutter {
+  display: table-cell !important;
+}
 </style>
