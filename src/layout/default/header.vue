@@ -6,9 +6,9 @@
             ')', 'background-size': '100% 100%'
           }"></div>
       <div class="page_head_r_con">
-        <!--            <div class="avatar" :style="{ backgroundImage: 'url(' + require('@src/assets/images/3b1aaec.png') + ')' }"></div>-->
+        <!--            <div class="avatar" :style="{ backgroundImage: 'url(' + require('@src/assets/images/header.gif') + ')' }"></div>-->
 
-        <div class="page_he_r_box01">您好，{{ loginData.nickname || loginData.username }}</div>
+        <div class="page_he_r_box01 font-clz">您好，{{ loginData.nickname || loginData.username }}</div>
         <!--      <div class="nickname"></div>-->
         <div class="page_he_r_box01">
           <el-dropdown class="avatar-container" trigger="click">
@@ -67,6 +67,12 @@ export default {
   background-size: cover;
   float: left;
   margin: 0px 5px 0 0;
+}
+
+.font-clz {
+  font-style: oblique;
+  font-family: SimSun;
+  font-weight: bold;
 }
 
 .page_head_r_con {
