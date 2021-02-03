@@ -2,7 +2,7 @@
   <div class="page_head">
     <div class="page_head_r">
       <!--    <div class="center flex-center"></div>-->
-      <div class="user-avator" :style="{ backgroundImage: 'url(' + require('@src/assets/images/logo.jpg') +
+      <div class="user-avator" :style="{ backgroundImage: 'url(' + require('@src/assets/images/2.gif') +
             ')', 'background-size': '100% 100%'
           }"></div>
       <div class="page_head_r_con">
