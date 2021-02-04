@@ -11,7 +11,7 @@ const store = new Vuex.Store({
             drawerSize: '400px'
         },
         token: $Basil.get('token') || '',
-        loginData: $Basil.get('loginData') || {nickname:'大魔王'}
+        loginData: $Basil.get('loginData') || {nickname:'管理员'}
     },
     mutations: {
         /**
